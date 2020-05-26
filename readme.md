@@ -16,11 +16,8 @@ To create the 'requirements.txt' file:
 python3 -m venv env
 source env/bin/activate
 pip install flask uwsgi
-pip list
 ```
 
-4. Generate the 'Requirements.txt' file by running the volume command. If you use Bind Mounting on the container you can easily copy the file to the correct location.
+4. Run `pip list` to view the current installed packages and thier dependencies.
 
-``` bash
-pip freeze > requirements.txt
-```
+5. Generate the 'Requirements.txt' file by running `pip freeze > requirements.txt`. If you use Bind Mounting on the container you can easily copy the file to the correct location.
